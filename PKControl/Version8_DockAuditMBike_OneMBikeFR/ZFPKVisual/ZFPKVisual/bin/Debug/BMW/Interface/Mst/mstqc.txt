@@ -1,0 +1,21 @@
+1|1|Checked front axle is placed on the rack correct position, and part must locked rack all points.|ตรวจสอบการวางคานหน้าลงแร็ควางถูกตำแหน่ง และล็อคชิ้นงานเข้ากับแร็คครบทุกจุด|เช่น ตัวล็อคโช็คหน้า จานเบรควางถูกตำแหน่ง
+1|2|Checked front axle is placed on the rack correct position, and part must locked rack all points.|ตรวจสอบการวางคานหน้าลงแร็ควางถูกตำแหน่ง และล็อคชิ้นงานเข้ากับแร็คครบทุกจุด|เช่น จานเบรควางถูกตำแหน่ง
+1|3|Checked rear axle is placed on the rack correct position, and part must locked rack all points.|ตรวจสอบยกคานหลังลงแร็ควางถูกตำแหน่ง และล็อคชิ้นงานเข้ากับแร็คครบทุกจุด|เช่น จานเบรควางถูกตำแหน่ง ตัวล็อคจานเบรค
+1|4|Checked rear axle is placed on the rack correct position, and part must locked rack all points.|ตรวจสอบยกคานหลังลงแร็ควางถูกตำแหน่ง และล็อคชิ้นงานเข้ากับแร็คครบทุกจุด|เช่น จานเบรควางถูกตำแหน่ง ตัวล็อคจานเบรค ตัวล็อคเทรลิ่งอาร์ม ตัวล็อคครอสส์เมมเบอร์
+1|5|Checked rear axle is placed on the rack correct position, and part must locked rack all points.|ตรวจสอบยกคานหลังลงแร็ควางถูกตำแหน่ง และล็อคชิ้นงานเข้ากับแร็คครบทุกจุด|เช่น จานเบรควางถูกตำแหน่ง
+1|6|Checked rear axle is placed on the rack correct position, and part must locked rack all points.|ตรวจสอบยกคานหลังลงแร็ควางถูกตำแหน่ง และล็อคชิ้นงานเข้ากับแร็คครบทุกจุด|เช่น จานเบรควางถูกตำแหน่ง ตัวล็อคจานเบรค ตัวล็อคเทรลิ่งอาร์ม ( ตัวล็อคครอสส์เมมเบอร์ U11/64EFA7 only )
+1|7|Invoice Front Fork no.|ระบุหมายเลขใบเรียกเก็บเงินจากลูกค้า|
+2|1|Check if Sticker Rear axle,inspection label,Barcode label is correct and completed and paste is face fully.|ตรวจสอบสติ๊กเกอร์คานหน้า,inspection label,Barcode label ถูกต้อง และสภาพสมบูรณ์ ไม่หลุดลอก|
+2|2|Check if Sticker Rear axle,inspection label,Barcode label is correct and completed and paste is face fully.|ตรวจสอบสติ๊กเกอร์คานหลัง,inspection label,Barcode label ถูกต้อง และสภาพสมบูรณ์ ไม่หลุดลอก|
+2|3|Checked burlap cover on finished goods rack complete|ตรวจสอบผ้าใบคลุมด้านบนของ Finished Goods Rack ให้เรียบร้อย|
+3|1|Checked protective cap to brake caliper|ตรวจสอบตัวครอบคาลิปเปอร์ (เฉพาะรุ่นที่เป็นคาริเปอร์สี)|
+3|2|Finished goods rack cleaned no dust, cobweb and water.|ตรวจความสะอาดของแร็ค เช่น ฝุ่น,ใยแมงมุม,หยดน้ำ|
+4|1|Checked date and compared Axle part,Delivery plan,Invoice,Trigger/Truck schedule must be corrected.|ตรวจสอบพาร์ทที่ต้องจัดส่ง ระหว่าง Delivery plan,Invoice,Trigger/Truck schedule ต้องตรงกัน|
+4|2|Checked "Lot label" is correct and complete|ตรวจ ป้ายบอก lot no.ที่แร็ค ต้องสมบูรณ์และถูกต้อง|
+5|1|Checked "Lot label" on rear strut box is correct and completed|ตรวจสอบป้ายแสดง Lot no. ที่กล่องส่งโช๊คหลัง ต้องสมบูรณ์และถูกต้อง |
+5|2|Checked and compared Axle part,Delivery plan,Invoice,Trigger/Truck schedule must be corrected.|ตรวจสอบพาร์ทที่ต้องจัดส่ง ระหว่าง Delivery plan,Invoice,Trigger/Truck schedule ต้องตรงกัน|
+6|1|Checked packaging condition ,LH/RH are different and lot no. of Assy rear strut shock absorber.|ตรวจสอบสภาพของกล่องบรรจุโช๊คหน้า,สกรู 16 ตัว ของล้อทั้ง 4 ล้อ ถูกขันแน่นกับตัว box start, ความถูกต้องของแต่ละข้างและหมายเลขล๊อต|
+6|2|Checked packaging condition ,LH/RH are different and lot no. of Assy rear strut shock absorber.|ตรวจสอบสภาพของกล่องบรรจุโช๊คหลัง,สกรู 16 ตัว ของล้อทั้ง 4 ล้อ ถูกขันแน่นกับตัว box start, ความถูกต้องของแต่ละข้างและหมายเลขล๊อต|
+6|3|Write the delivery date of plan into table below and follow to check at axle no.(date/month)|ใส่กำหนดการส่ง axle ตาม no. ในตาราง (วันที่/เดือน)|
+7|1|Checked rear struts are loaded to the correct side struts box, rear struts correct to number strut box and random check rear strus LH/RH no.  6,12,18,24|ตรวจสอบโช็คหลังใส่ถูกข้างถูกกล่อง , หมายเลขโช็คหลังวางถูกต้องตรงกับหมายเลขกล่อง และสุ่มตรวจโช็คหลังข้างซ้าย/ขวา หมายเลข 6,12,18,24|
+7|2|Checked when loading the axle part to contener is finished.|ตรวจสอบว่านำ axle ส่งขึ้นรถบรรทุกเรียบร้อยแล้ว|

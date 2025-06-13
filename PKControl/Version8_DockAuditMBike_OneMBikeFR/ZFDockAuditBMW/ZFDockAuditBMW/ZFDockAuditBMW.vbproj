@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B16EC42-77DC-49C7-B068-411B1BE36424}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZFDockAuditBMW</RootNamespace>
+    <AssemblyName>ZFDockAuditBMW</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <DeployDirSuffix>ZFDockAuditBMW</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>ZFDockAuditBMW.SingleInstance.Program</StartupObject>
+    <ApplicationIcon>Resources\appicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="OPE-UtilDB, Version=1.0.4667.20290, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OPE-UtilDB.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.Audio, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.Barcode, Version=2.9.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.ResourceCoordination, Version=2.9.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.ResourceCoordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.StandardForms, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.StandardForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetPicBox\AssetPicBox.Designer.vb">
+      <DependentUpon>AssetPicBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssetPicBox\AssetPicBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check7\clsVCheck7.Designer.vb">
+      <DependentUpon>clsVCheck7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Check7\clsVCheck7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Barcode_System.vb" />
+    <Compile Include="Class\Conn.vb" />
+    <Compile Include="DockSync\clsVDockSync.Designer.vb">
+      <DependentUpon>clsVDockSync.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DockSync\clsVDockSync.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\clsCLogin.vb" />
+    <Compile Include="Login\clsVLogin.Designer.vb">
+      <DependentUpon>clsVLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\clsVLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\Configuration\clsVConfig.Designer.vb">
+      <DependentUpon>clsVConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\Configuration\clsVConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\ImportMasterData\clsVImportMasterData.Designer.vb">
+      <DependentUpon>clsVImportMasterData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\ImportMasterData\clsVImportMasterData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainMenu\clsVMain.Designer.vb">
+      <DependentUpon>clsVMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainMenu\clsVMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MaintenanceMenu\clsVMaintenanceMenu.Designer.vb">
+      <DependentUpon>clsVMaintenanceMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MaintenanceMenu\clsVMaintenanceMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ScanMenu\clsVScanMenu.Designer.vb">
+      <DependentUpon>clsVScanMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ScanMenu\clsVScanMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.vb" />
+    <Compile Include="ScanAxle\clsCScanAxle.vb" />
+    <Compile Include="ScanAxle\clsVScanAxle.Designer.vb">
+      <DependentUpon>clsVScanAxle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScanAxle\clsVScanAxle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanAxle\clsVModelDockList.Designer.vb">
+      <DependentUpon>clsVModelDockList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScanAxle\clsVModelDockList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanShock\clsCScanShock.vb" />
+    <Compile Include="ScanShock\clsVScanShock.Designer.vb">
+      <DependentUpon>clsVScanShock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScanShock\clsVScanShock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemClas\API.vb" />
+    <Compile Include="ViewMenu\clsVViewMenu.Designer.vb">
+      <DependentUpon>clsVViewMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMenu\clsVViewMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\clsCView.vb" />
+    <Compile Include="View\clsVAuthor.Designer.vb">
+      <DependentUpon>clsVAuthor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\clsVAuthor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\clsVView.Designer.vb">
+      <DependentUpon>clsVView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\clsVView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AssetPicBox\AssetPicBox.resx">
+      <DependentUpon>AssetPicBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check7\clsVCheck7.resx">
+      <DependentUpon>clsVCheck7.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockSync\clsVDockSync.resx">
+      <DependentUpon>clsVDockSync.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\clsVLogin.resx">
+      <DependentUpon>clsVLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\Configuration\clsVConfig.resx">
+      <DependentUpon>clsVConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\ImportMasterData\clsVImportMasterData.resx">
+      <DependentUpon>clsVImportMasterData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainMenu\clsVMain.resx">
+      <DependentUpon>clsVMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MaintenanceMenu\clsVMaintenanceMenu.resx">
+      <DependentUpon>clsVMaintenanceMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ScanMenu\clsVScanMenu.resx">
+      <DependentUpon>clsVScanMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanAxle\clsVScanAxle.resx">
+      <DependentUpon>clsVScanAxle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanAxle\clsVModelDockList.resx">
+      <DependentUpon>clsVModelDockList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanShock\clsVScanShock.resx">
+      <DependentUpon>clsVScanShock.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMenu\clsVViewMenu.resx">
+      <DependentUpon>clsVViewMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\clsVAuthor.resx">
+      <DependentUpon>clsVAuthor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\clsVView.resx">
+      <DependentUpon>clsVView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appicon.ico" />
+    <None Include="Resources\Barcode.png" />
+    <None Include="Resources\EmpCard.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
