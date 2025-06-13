@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZFPKCtrlBMW", "ZFPKCtrlBMW\ZFPKCtrlBMW.vbproj", "{9E972ADD-0BD1-4F04-B5FD-F799494C8155}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "PKCtrlBMW", "PKCtrlBMW\PKCtrlBMW.vddproj", "{38DB8DB8-3B4A-4504-93DA-67C092CD1B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E972ADD-0BD1-4F04-B5FD-F799494C8155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E972ADD-0BD1-4F04-B5FD-F799494C8155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E972ADD-0BD1-4F04-B5FD-F799494C8155}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9E972ADD-0BD1-4F04-B5FD-F799494C8155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E972ADD-0BD1-4F04-B5FD-F799494C8155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E972ADD-0BD1-4F04-B5FD-F799494C8155}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{38DB8DB8-3B4A-4504-93DA-67C092CD1B2B}.Debug|Any CPU.ActiveCfg = Debug
+		{38DB8DB8-3B4A-4504-93DA-67C092CD1B2B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

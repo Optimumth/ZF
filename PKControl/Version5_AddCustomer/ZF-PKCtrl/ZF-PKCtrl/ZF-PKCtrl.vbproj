@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11A016BE-D28C-47AE-9F7A-ADC982AD4526}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZF_PKCtrl</RootNamespace>
+    <AssemblyName>ZF-PKCtrl</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.00</OSVersion>
+    <DeployDirSuffix>ZF_PKCtrl</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>ZF_PKCtrl.SingleInstance.Program</StartupObject>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Windowsce.Forms" />
+    <Reference Include="OPE-UtilDB, Version=1.0.4667.20290, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Symbol, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL" />
+    <Reference Include="Symbol.Audio, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.Barcode, Version=2.9.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.ResourceCoordination, Version=2.9.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.ResourceCoordination.dll</HintPath>
+    </Reference>
+    <Reference Include="Symbol.StandardForms, Version=2.8.0.0, Culture=neutral, PublicKeyToken=68ec8db391f150ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Symbol.StandardForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Conn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Maintenance\Configuration\clsVConfig.Designer.vb">
+      <DependentUpon>clsVConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\Configuration\clsVConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\RackSync\clsVRackSync.Designer.vb">
+      <DependentUpon>clsVRackSync.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\RackSync\clsVRackSync.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\ResetPassword\clsVResetPassword.Designer.vb">
+      <DependentUpon>clsVResetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\ResetPassword\clsVResetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintenance\Staff\clsVImportStaff.Designer.vb">
+      <DependentUpon>clsVImportStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\Staff\clsVImportStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Login\clsCLogin.vb" />
+    <Compile Include="Main\MainMenu\clsCMain.vb" />
+    <Compile Include="Main\MainMenu\clsVMain.Designer.vb">
+      <DependentUpon>clsVMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainMenu\clsVMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MaintenanceMenu\clsVMaintenanceMenu.Designer.vb">
+      <DependentUpon>clsVMaintenanceMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MaintenanceMenu\clsVMaintenanceMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ScanMenu\clsVScanMenu.Designer.vb">
+      <DependentUpon>clsVScanMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ScanMenu\clsVScanMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ViewMenu\clsVViewMenu.Designer.vb">
+      <DependentUpon>clsVViewMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ViewMenu\clsVViewMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Move\clsCMove.vb" />
+    <Compile Include="Move\clsVMove.Designer.vb">
+      <DependentUpon>clsVMove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Move\clsVMove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemClas\API.vb" />
+    <Compile Include="busCheckMstProduct.vb" />
+    <Compile Include="Class\Barcode_System.vb" />
+    <Compile Include="Main\Login\clsVLogin.Designer.vb">
+      <DependentUpon>clsVLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Login\clsVLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.vb" />
+    <Compile Include="Truck\clsCTruck.vb" />
+    <Compile Include="Truck\clsVTruck.Designer.vb">
+      <DependentUpon>clsVTruck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Truck\clsVTruck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\clsVAuthor.Designer.vb">
+      <DependentUpon>clsVAuthor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\clsVAuthor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\clsVView.Designer.vb">
+      <DependentUpon>clsVView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\clsVView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Maintenance\Configuration\clsVConfig.resx">
+      <DependentUpon>clsVConfig.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\RackSync\clsVRackSync.resx">
+      <DependentUpon>clsVRackSync.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\ResetPassword\clsVResetPassword.resx">
+      <DependentUpon>clsVResetPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\Staff\clsVImportStaff.resx">
+      <DependentUpon>clsVImportStaff.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Login\clsVLogin.resx">
+      <DependentUpon>clsVLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainMenu\clsVMain.resx">
+      <DependentUpon>clsVMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MaintenanceMenu\clsVMaintenanceMenu.resx">
+      <DependentUpon>clsVMaintenanceMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ScanMenu\clsVScanMenu.resx">
+      <DependentUpon>clsVScanMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ViewMenu\clsVViewMenu.resx">
+      <DependentUpon>clsVViewMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Move\clsVMove.resx">
+      <DependentUpon>clsVMove.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Truck\clsVTruck.resx">
+      <DependentUpon>clsVTruck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\clsVAuthor.resx">
+      <DependentUpon>clsVAuthor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\clsVView.resx">
+      <DependentUpon>clsVView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appicon.ico" />
+    <Content Include="PKCtrl.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Barcode.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
