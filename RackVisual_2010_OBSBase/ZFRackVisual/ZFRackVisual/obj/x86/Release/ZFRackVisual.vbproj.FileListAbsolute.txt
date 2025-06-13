@@ -1,0 +1,8 @@
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.vbprojResolveAssemblyReference.cache
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.Form1.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.clsVLoad.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.Login.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.MainFormMDI.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.clsVSplash.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.Resources.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Release\ZFRackVisual.vbproj.GenerateResource.Cache
