@@ -1,0 +1,7 @@
+Get Data
+     Index :0     ERROR ID : 209
+    Message: Ambiguous column name 'StaffCode'.
+    LineNumber: 4
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+
