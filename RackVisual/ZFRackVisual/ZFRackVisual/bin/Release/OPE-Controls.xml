@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OPE-Controls
+</name>
+</assembly>
+<members>
+<member name="M:OPE_Controls.clsBCheckData.ConverImage(System.Drawing.Image,System.Int32)">
+	<summary>
+ ·Ó¡ÒÃá»Å§¤èÒ ÃÙ»ÀÒ¾
+ </summary>
+	<param name="pImg">ÃÙ»·Õè¨Ð·Ó¡ÒÃá»Å§¤èÒ</param>
+	<param name="PerSend">¨ÐãËéÅ´Å§¡Õè % [input 100 ¨Ðä´éÃÙ»ÀÒ¾à·èÒà´ÔÁ 20% Å´ÃÙ»àËÅ×Í 20%] </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBCheckData.ToInt_NullIsZero(System.Object)">
+	<summary>
+ Â¡àÅÔ¡ãËéä»ãªé    ToInt á·¹ à«µ NullIsZero = True
+ </summary>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBPrintForm.MergeCell(System.String,OPE_Controls.clsBPrintForm.enLineStyle,OPE_Controls.clsBPrintForm.enWeight,Excel.XlHAlign)">
+	<summary>
+ ãªéã¹¡ÒÃ Merge Cell ã¹ Excel
+ </summary>
+	<param name="CellRange">ÃÙ»áºº A1:Z25</param>
+	<param name="nLineStyle">¡ÓË¹´ÃÙ»áººàÊé¹¢Íº¢Í§ Merge Cell</param>
+	<param name="nLineWeight">¡ÓË¹´¤ÇÒÁË¹ÒàÊé¹¢Íº¢Í§ Merge Cell</param>
+	<param name="Position">¡ÓË¹´¡ÒÃ Set Align ¢Í§ Merge Cell</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBPrintForm.CopyPasteShapes(System.String,System.String,System.String,System.String,System.Double)">
+	<summary>
+ ãªéã¹¡ÒÃ Copy Shape ¨Ò¡ Sheet µé¹·Ò§ ä» »ÅÒÂ·Ò§
+ </summary>
+	<param name="CopySheetName">Sheet µé¹·Ò§</param>
+	<param name="sShapesName">Shape µé¹·Ò§</param>
+	<param name="PasteSheetName">Sheet »ÅÒÂ·Ò§</param>
+	<param name="PasteArea">µÓáË¹è§ ¢Í§ Cell »ÅÒÂ·Ò§ àªè¹ A1</param>
+	<param name="TopAdj">á¡éä¢ µÓáË¹è§¢Í§ Sheet Ë¹Ñ§¨Ò¡ copy áÅéÇ ã¹µÓáË¹è§´éÒ¹º¹</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBPrintForm.AddPicture(System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ Add Object Picture to Excel File
+ </summary>
+	<param name="Range">¡ÓË¹´¢Íºà¢µ àªè¹ A1:C3</param>
+	<param name="FilePath">·ÕèÍÂÙè¢Í§ Picture File</param>
+	<param name="Width">¡ÓË¹´¤ÇÒÁ¡ÇéÒ§¢Í§ÃÙ»</param>
+	<param name="Height">¡ÓË¹´¤ÇÒÁÊÙ§¢Í§ÃÙ»</param>
+	<param name="PlusLeft"></param>
+	<param name="PlusTop"></param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBPrintForm.AddPicture(System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ Add Object Picture to Excel File
+ </summary>
+	<param name="SheetName">Sheet name for insert picture</param>
+	<param name="Range">¡ÓË¹´¢Íºà¢µ àªè¹ A1:C3</param>
+	<param name="FilePath">·ÕèÍÂÙè¢Í§ Picture File</param>
+	<param name="Width">¡ÓË¹´¤ÇÒÁ¡ÇéÒ§¢Í§ÃÙ»</param>
+	<param name="Height">¡ÓË¹´¤ÇÒÁÊÙ§¢Í§ÃÙ»</param>
+	<param name="PlusLeft"></param>
+	<param name="PlusTop"></param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBPrintForm.ClearLine(System.String)">
+	<summary>
+ ãªéã¹¡ÒÃ Clear Line µèÒ§ æ ã¹ Cell
+ </summary>
+	<param name="CellRange">ÃÙ»áºº A1:Z25</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsBPrintForm.CreateLine(System.String,OPE_Controls.clsBPrintForm.enLinePosition,OPE_Controls.clsBPrintForm.enLineStyle,OPE_Controls.clsBPrintForm.enWeight,System.Int32)">
+	<summary>
+ ãªéã¹¡ÒÃÊÃéÒ§ Line ãËé¡Ñº Cell
+ </summary>
+	<param name="CellRange">ÃÙ»áºº A1:Z25</param>
+	<param name="Position">¡ÓË¹´µÓáË¹è§ã¹¡ÒÃÊÃéÒ§ Line àªè¹ º¹ ÅèÒ§ «éÒÂ ¢ÇÒ</param>
+	<param name="nLineStyle">¡ÓË¹´ÃÙ»áºº¢Í§ Line ã¹¡ÒÃÊÃéÒ§ àªè¹ ¢Õ´ »ÃÐ</param>
+	<param name="nLineWeight">¡ÓË¹´¤ÇÒÁË¹Ò ¢Í§ Line</param>
+	<param name="nLineColorIdx">¡ÓË¹´ÊÕè¢Í§ Line</param>
+	<remarks></remarks>
+</member><member name="T:OPE_Controls.DataGridViewRadioButtonCell.DataGridViewRadioButtonFreeDimension">
+	<summary>
+ Convenient enumeration using privately for calculating preferred cell sizes.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.#ctor">
+	<summary>
+ DataGridViewRadioButtonCell class constructor.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.EditingCellFormattedValue">
+	<summary>
+ Represents the cell's formatted value
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.EditingCellValueChanged">
+	<summary>
+ Keeps track of whether the cell's value has changed or not.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetEditingCellFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)">
+	<summary>
+ Returns the current formatted value of the cell
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.PrepareEditingCellForEdit(System.Boolean)">
+	<summary>
+ Called by the grid when the cell enters editing mode. 
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.DataManager">
+	<summary>
+ Stores the CurrencyManager associated to the cell's DataSource
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.DataSource">
+	<summary>
+ Overrides the DataGridViewComboBox's implementation of the DataSource property to 
+ initialize the displayMemberProperty and valueMemberProperty members.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.DisplayMember">
+	<summary>
+ Overrides the DataGridViewComboBox's implementation of the DisplayMember property to
+ update the displayMemberProperty member.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.EditType">
+	<summary>
+ Overrides the base implementation to replace the 'complex editing experience'
+ with a 'simple editing experience'.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.MaxDisplayedItems">
+	<summary>
+ Custom property that represents the maximum number of radio buttons shown by the cell.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.MaxDisplayedItemsInternal">
+	<summary>
+ Called internally by the DataGridViewRadioButtonColumn class to avoid the invalidation
+ done by the MaxDisplayedItems setter above (for performance reasons).
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.StandardBorderWidths">
+	<summary>
+ Utility function that returns the standard thickness (in pixels) of the four borders of the cell.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCell.ValueMember">
+	<summary>
+ Overrides the DataGridViewComboBox's implementation of the ValueMember property to
+ update the valueMemberProperty member.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.CellStateFromColumnRowStates(System.Windows.Forms.DataGridViewElementStates)">
+	<summary>
+ Utility function that returns the cell state inherited from the owning row and column.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.Clone">
+	<summary>
+ Custom implementation of the Clone method to copy over the special properties of the cell.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.ComputeLayout(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts,System.Boolean)">
+	<summary>
+ Computes the layout of the cell and optionally paints it.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.ContentClickUnsharesRow(System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ Returns whether calling the OnContentClick method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.DataGridView_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ Raised when the owning grid gets a MouseUp notification
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.DataSource_Initialized(System.Object,System.EventArgs)">
+	<summary>
+ Raised when the cell's DataSource is initialized.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.EnterUnsharesRow(System.Int32,System.Boolean)">
+	<summary>
+ Returns whether calling the OnEnter method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetContentBounds(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32)">
+	<summary>
+ Custom implementation of the GetContentBounds method which delegates most of the work to the ComputeLayout function.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetFreeDimensionFromConstraint(System.Drawing.Size)">
+	<summary>
+ Utility function that converts a constraintSize provided to GetPreferredSize into a 
+ DataGridViewRadioButtonFreeDimension enum value.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetItemDisplayValue(System.Object)">
+	<summary>
+ Utility function that returns the display value of an item given the 
+ display/value property descriptors and display/value property names.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetItemValue(System.Object)">
+	<summary>
+ Utility function that returns the value of an item given the 
+ display/value property descriptors and display/value property names.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetMouseLocationCode(System.Drawing.Graphics,System.Int32,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Int32)">
+	<summary>
+ Returns the code identifying the part of the cell which is underneath the mouse pointer.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetScrollBarArrowButtonState(System.Boolean,System.Int32,System.Boolean)">
+	<summary>
+ Returns a ScrollBarArrowButtonState state given the current mouse location.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetPreferredSize(System.Drawing.Graphics,System.Windows.Forms.DataGridViewCellStyle,System.Int32,System.Drawing.Size)">
+	<summary>
+ Custom implementation of the GetPreferredSize method.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.GetScrollingNeeded(System.Drawing.Graphics,System.Int32,System.Windows.Forms.DataGridViewCellStyle,System.Drawing.Size)">
+	<summary>
+ Helper function that determines if scrolling buttons should be displayed
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.InitializeDisplayMemberPropertyDescriptor(System.String)">
+	<summary>
+ Helper function that sets the displayMemberProperty member based on the DataSource and the provided displayMember field name
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.InitializeValueMemberPropertyDescriptor(System.String)">
+	<summary>
+ Helper function that sets the valueMemberProperty member based on the DataSource and the provided valueMember field name
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.InvalidateItem(System.Int32,System.Int32)">
+	<summary>
+ Helper function that invalidates the entire area of an entry
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.InvalidateRadioGlyph(System.Int32,System.Windows.Forms.DataGridViewCellStyle)">
+	<summary>
+ Helper function that invalidates the glyph section of an entry
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.KeyDownUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)">
+	<summary>
+ Returns whether calling the OnKeyDown method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.KeyUpUnsharesRow(System.Windows.Forms.KeyEventArgs,System.Int32)">
+	<summary>
+ Returns whether calling the OnKeyUp method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.MouseDownUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Returns whether calling the OnMouseDown method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.MouseLeaveUnsharesRow(System.Int32)">
+	<summary>
+ Returns whether calling the OnMouseLeave method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.MouseUpUnsharesRow(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Returns whether calling the OnMouseUp method would force the owning row to be unshared.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.NotifyDataGridViewOfValueChange">
+	<summary>
+ Method that declares the cell dirty and notifies the grid of the value change.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnContentClick(System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ Potentially updates the selected item and notifies the grid of the change.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnDataGridViewChanged">
+	<summary>
+ Updates the property descriptors when the cell gets attached to the grid.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnEnter(System.Int32,System.Boolean)">
+	<summary>
+ Makes sure that there is a focused item when the cell becomes the current one.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnKeyDown(System.Windows.Forms.KeyEventArgs,System.Int32)">
+	<summary>
+ Handles the KeyDown notification when it can result in a value change.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnKeyUp(System.Windows.Forms.KeyEventArgs,System.Int32)">
+	<summary>
+ Handles the KeyUp notification to change the cell's value.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnMouseDown(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Custom implementation of the MouseDown notification to update the cell's value or scroll the entries.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnMouseEnter(System.Int32)">
+	<summary>
+ Makes sure the radio button gets hot when the mouse gets over it
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnMouseLeave(System.Int32)">
+	<summary>
+ Invalidates part of the cell as needed
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnMouseMove(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Invalidates part of the cell as needed
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.OnMouseUp(System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Invalidates the potential pressed radio button. 
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)">
+	<summary>
+ Paints the entire cell.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.PaintItem(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Int32,System.Windows.Forms.DataGridViewCellStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Paints a single item.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.PartPainted(System.Windows.Forms.DataGridViewPaintParts,System.Windows.Forms.DataGridViewPaintParts)">
+	<summary>
+ Helper function that indicates if a paintPart needs to be painted.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.ToString">
+	<summary>
+ Custom implementation that follows the standard representation of cell types.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonCell.UpdateFormattedValue(System.Int32,System.Int32)">
+	<summary>
+ Returns true if the provided item successfully became the selected item.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.ContentBounds">
+	<summary>
+ Boundaries of the cell content defined as the radio buttons of the displayed items.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.FirstDisplayedItemIndex">
+	<summary>
+ Index of the first displayed item.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.DisplayedItemsCount">
+	<summary>
+ Number of displayed items (includes potential partially displayed one).
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.TotallyDisplayedItemsCount">
+	<summary>
+ Number of totally displayed items.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.ScrollingNeeded">
+	<summary>
+ Indicates whether the scroll buttons need to be shown or not.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.DownButtonLocation">
+	<summary>
+ Location of the Down scroll button.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.UpButtonLocation">
+	<summary>
+ Location of the Up scroll button.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.FirstDisplayedItemLocation">
+	<summary>
+ Location of the top most displayed item.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.ScrollButtonsSize">
+	<summary>
+ Size of the scroll buttons.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonCellLayout.RadioButtonsSize">
+	<summary>
+ Size of the radio button glyphs.
+ </summary>
+</member><member name="T:OPE_Controls.DataGridViewRadioButtonCellLayout">
+	<summary>
+ Internal class that represents the layout of a DataGridViewRadioButtonCell cell.
+ It tracks the first displayed item index, the number of displayed items, 
+ scrolling information and various location/size information.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonColumn.#ctor">
+	<summary>
+ Column constructor that uses a default DataGridViewRadioButtonCell cell for its CellTemplate.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.CellTemplate">
+	<summary>
+ Represents the implicit cell that gets cloned when adding rows to the grid.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.DataSource">
+	<summary>
+ Replicates the DataSource property of the DataGridViewRadioButtonCell cell type.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.DisplayMember">
+	<summary>
+ Replicates the DisplayMember property of the DataGridViewRadioButtonCell cell type.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.Items">
+	<summary>
+ Replicates the Items property of the DataGridViewRadioButtonCell cell type.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.MaxDisplayedItems">
+	<summary>
+ Replicates the MaxDisplayedItems property of the DataGridViewRadioButtonCell cell type.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.RadioButtonCellTemplate">
+	<summary>
+ Small utility function that returns the template cell as a DataGridViewRadioButtonCell.
+ </summary>
+</member><member name="P:OPE_Controls.DataGridViewRadioButtonColumn.ValueMember">
+	<summary>
+ Replicates the ValueMember property of the DataGridViewRadioButtonCell cell type.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonColumn.NotifyItemsCollectionChanged">
+	<summary>
+ Call this public method when the Items collection of this column's CellTemplate was changed.
+ Updates the items collection of each existing DataGridViewRadioButtonCell in the column.
+ </summary>
+</member><member name="M:OPE_Controls.DataGridViewRadioButtonColumn.ToString">
+	<summary>
+ Returns a standard compact string representation of the column.
+ </summary>
+</member><member name="T:OPE_Controls.DataGridViewRadioButtonColumn">
+	<summary>
+ Custom column type dedicated to the DataGridViewRadioButtonCell cell type.
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowInformation(OPE_Controls.MessageType,System.String)">
+	<summary> Return True Only </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowWarningMessageCode(System.String)">
+	<summary> Return False Only </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowWarning(OPE_Controls.MessageType,System.String)">
+	<summary> Return False Only </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowWarning(OPE_Controls.MessageType,System.String,System.Object[])">
+	<summary> Return False Only </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowCustomerImportError(System.String)">
+	<summary>
+ Return "Do you want to calculation stock?"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowDoYouWantToCalculationStock">
+	<summary>
+ Return "Do you want to calculation stock?"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowQuestionSaveToDatabase(System.String,System.Boolean)">
+	<summary>
+ "Do you want to save the changes you made to database? [Yes|No|Cancel]"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowMasterDataCheckFinished">
+	<summary>
+ Return "Master data check finished."
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowCannotSavePleaseInputDetailData">
+	<summary>
+ Return "Cannot save, Please input detail data."
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowDoYouWantToPrintThisDocument">
+	<summary>
+ Return "Please input Lot No: this item must control lot"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowCannotUpdateThisDocument_DocumentComplete">
+	<summary>
+ Return "Cannot update this document because have relation to other operation"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowCannotUpdateThisDocument">
+	<summary>
+ Return "Cannot update this document because have relation to other operation"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowCannotDeleteThisDocument">
+	<summary>
+ Return "Cannot delete this document because have relation to other operation"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowFormatDataIncorrect(System.String)">
+	<summary>
+ Return "Format data incorrect."
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowMasterDatatWasNotCompleteDoYouWantToSaveData">
+	<summary>
+ Return "Master data was not complete. Do you want to save data?"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowNoData">
+	<summary>
+ Return "No Data"
+ </summary>
+</member><member name="M:OPE_Controls.clsCMessageError.ShowForecastImportError(System.String)">
+	<summary>
+ Return "Send Error File TO OPE"
+ </summary>
+</member><member name="M:OPE_Controls.ReserveField.ToDataRow(System.Windows.Forms.FlowLayoutPanel,System.Data.DataRow@)">
+	<summary> Set data from Object controls to DataRow </summary>
+</member><member name="M:OPE_Controls.ReserveField.ToControl(System.Windows.Forms.FlowLayoutPanel@,System.Data.DataRow)">
+	<summary> Set data from DataRow to Object controls </summary>
+</member><member name="E:OPE_Controls.frmMst004.UpdateClick">
+	<summary>แก้ไข</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="drGrd">ข้อมูลที่ได้จาก Data Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst004.Other1Click">
+	<summary>
+ Other 1 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst004.Other2Click">
+	<summary>
+ Other 2 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst004.Other3Click">
+	<summary>
+ Other 3 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst004.Other4Click">
+	<summary>
+ Other 4 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst004.Other5Click">
+	<summary>
+ Other 5 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst004.Other6Click">
+	<summary>
+ Other 6 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.MDIParent1.ProductKind">
+	<summary> 1 : Production , 2 : Sales And Inventory </summary>
+</member><member name="M:OPE_Controls.DAO.daoBase2.clr">
+	<summary>
+ Clear Value in All Field
+ </summary>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.updKey(System.String,System.String@)">
+	<summary>
+ Update Field Where By Primary Key
+ </summary>
+	<param name="strSet">Set Columns Value Ex. A = 'B'</param>
+	<param name="pErr">Error Message</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.delKey(System.String)">
+	<summary>
+ Delete Data By Primary Key
+ </summary>
+	<param name="pErr">แจ้งข้อผิดพลาด</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.chkKey">
+	<summary>
+ Check Duplicate Primary Key
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getKey">
+	<summary>
+ Get Data By Primary Key
+ ถ้าหาเจอ จะ set Field ด้วยค่าที่หาได้
+ </summary>
+	<returns>True หาเจอ False หาไม่เจอ</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.setRec(System.Data.DataRow)">
+	<summary>
+ set value จาก data row ไปยังตัวแปร Field
+ </summary>
+	<param name="row"></param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.row2Rec(System.Data.DataRow)">
+	<summary>
+ set value จาก data row ไปยังตัวแปร Field
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.setValue(System.Data.DataRow)">
+	<summary>
+ set value จาก data row ไปยังตัวแปร Field
+ </summary>
+	<param name="dr"></param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.insRec_MySQL(System.String@)">
+	<summary>
+ Insert Data 1 Row To Data base By use Field Value
+ </summary>
+	<param name="pErr">Error Message</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.updRec(System.String,System.String,System.String@)">
+	<summary>
+ Update Recode in Database By use Field Value
+ </summary>
+	<param name="strWhere">Condition for update</param>
+	<param name="strSet">ข้อมูลที่ต้องการ update ถ้าไม่กำหนด คือเอาทุก Field</param>
+	<param name="pErr">Error Message</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.delRec(System.String,System.String)">
+	<summary>
+ Delete Data in Database 
+ </summary>
+	<param name="strWhere">เงือนไขในการลบ</param>
+	<param name="pErr">แจ้งข้อผิดพลาด</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getRec(System.String,System.String,System.String)">
+	<summary>
+ ค้นหาข้อมูลจาก Database
+ </summary>
+	<param name="strWhere">ถ้าไม่กำหนดคือเอาทุกเงือนไข</param>
+	<param name="strColumns">ถ้าไม่กำหนดคือเอาทุก Coloumns</param>
+	<param name="strOrder">Sord Columns</param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getRec(System.String,System.Collections.Hashtable,System.String,System.String)">
+	<summary>
+ ค้นหาข้อมูลจาก Database
+ </summary>
+	<param name="strWhere">ถ้าไม่กำหนดคือเอาทุกเงือนไข</param>
+	<param name="strColumns">ถ้าไม่กำหนดคือเอาทุก Coloumns</param>
+	<param name="strOrder">Sord Columns</param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getMaxField(System.String,System.String)">
+	<summary>
+ ใช้ในการหาค่า Max Value ของ Field ที่กำหนด
+ </summary>
+	<param name="sField">Field Name ที่ต้องการหาค่า Max</param>
+	<param name="sWhere">เงือนไขในการหาค่า Max</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getInsStrSQL">
+	<summary>
+ Create Query for insert Data
+ </summary>
+	<returns>Query For Insert Data</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getUpdStr(System.String,System.String)">
+	<summary>
+ Create Query for update data
+ </summary>
+	<param name="strWhere">Where Condition</param>
+	<param name="strSet">Set Value ถ้าไม่กำหนด คือ Update ทุก Columns</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getDelStr(System.String)">
+	<summary>
+ Create Query for Delete Data
+ </summary>
+	<param name="strWhere">Where Condition</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.getSelStr(System.String,System.String,System.String)">
+	<summary>
+ Create Query for Select Data
+ </summary>
+	<param name="strWhere">Where Condition</param>
+	<param name="strCollumn">กำหนด Column ที่จะค้นหา ถ้าไม่กำหนด คือเอาหมด</param>
+	<param name="strOrder">Sort Data</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.makeWhere_SQL">
+	<summary>
+ สร้างเงือนไขการค้นหาตาม Primary Key
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase2.makeWhere_SQL(System.String@,System.Collections.Hashtable@)">
+	<summary>
+ สร้างเงือนไขการค้นหาตาม Primary Key
+ </summary>
+	<param name="sWhere">เงือนไขที่ได้สำหรับการ Where</param>
+	<param name="pParam">Parameter ที่จำเป็นในการ Where</param>
+	<returns>True : OK , False : Create Where Error</returns>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst005_BOM.UpdateClick">
+	<summary>
+ ใช้ตอนกด Update
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="drGrd">ข้อมูลที่ได้จาก Data Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst007.UpdateClick">
+	<summary>แก้ไข</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="drGrd">ข้อมูลที่ได้จาก Data Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst007.Other1Click">
+	<summary>
+ Other 1 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst007.Other2Click">
+	<summary>
+ Other 2 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst007.Other3Click">
+	<summary>
+ Other 3 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.clsUserPermission.IsRunAsAdmin">
+	<summary>
+  The function checks whether the current process is run as administrator.
+  In other words, it dictates whether the primary access token of the
+  process belongs to user account that is a member of the local
+  Administrators group and it is elevated.
+ </summary>
+	<returns>
+ Returns true if the primary access token of the process belongs to user
+  account that is a member of the local Administrators group and it is
+ elevated. Returns false if the token does not.
+ </returns>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst008.UpdateClick">
+	<summary>แก้ไข</summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="drGrd">ข้อมูลที่ได้จาก Data Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst008.Other2Click">
+	<summary>
+ Other 2 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="E:OPE_Controls.frmMst008.Other3Click">
+	<summary>
+ Other 3 Event Click
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<param name="GrdData">All Data From Grid</param>
+	<param name="GrdRow">Select Row From Grid</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.clr">
+	<summary>
+ Clear Value in All Field
+ </summary>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.updKey(System.String,System.String@)">
+	<summary>
+ Update Field Where By Primary Key
+ </summary>
+	<param name="strSet">Set Columns Value Ex. A = 'B'</param>
+	<param name="pErr">Error Message</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.delKey(System.String)">
+	<summary>
+ Delete Data By Primary Key
+ </summary>
+	<param name="pErr">แจ้งข้อผิดพลาด</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.chkKey">
+	<summary>
+ Check Duplicate Primary Key
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getKey">
+	<summary>
+ Get Data By Primary Key
+ ถ้าหาเจอ จะ set Field ด้วยค่าที่หาได้
+ </summary>
+	<returns>True หาเจอ False หาไม่เจอ</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.setRec(System.Data.DataRow)">
+	<summary>
+ set value จาก data row ไปยังตัวแปร Field
+ </summary>
+	<param name="row"></param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.row2Rec(System.Data.DataRow)">
+	<summary>
+ set value จาก data row ไปยังตัวแปร Field
+ </summary>
+	<param name="row"></param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.setValue(System.Data.DataRow)">
+	<summary>
+ set value จาก data row ไปยังตัวแปร Field
+ </summary>
+	<param name="dr"></param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.insRec_MySQL(System.String@)">
+	<summary>
+ Insert Data 1 Row To Data base By use Field Value
+ </summary>
+	<param name="pErr">Error Message</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.updRec(System.String,System.String,System.String@)">
+	<summary>
+ Update Recode in Database By use Field Value
+ </summary>
+	<param name="strWhere">Condition for update</param>
+	<param name="strSet">ข้อมูลที่ต้องการ update ถ้าไม่กำหนด คือเอาทุก Field</param>
+	<param name="pErr">Error Message</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.delRec(System.String,System.String)">
+	<summary>
+ Delete Data in Database 
+ </summary>
+	<param name="strWhere">เงือนไขในการลบ</param>
+	<param name="pErr">แจ้งข้อผิดพลาด</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getRec(System.String,System.String,System.String)">
+	<summary>
+ ค้นหาข้อมูลจาก Database
+ </summary>
+	<param name="strWhere">ถ้าไม่กำหนดคือเอาทุกเงือนไข</param>
+	<param name="strColumns">ถ้าไม่กำหนดคือเอาทุก Coloumns</param>
+	<param name="strOrder">Sord Columns</param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getRec(System.String,System.Collections.Hashtable,System.String,System.String)">
+	<summary>
+ ค้นหาข้อมูลจาก Database
+ </summary>
+	<param name="strWhere">ถ้าไม่กำหนดคือเอาทุกเงือนไข</param>
+	<param name="strColumns">ถ้าไม่กำหนดคือเอาทุก Coloumns</param>
+	<param name="strOrder">Sord Columns</param>
+	<returns>Data Table</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getMaxField(System.String,System.String)">
+	<summary>
+ ใช้ในการหาค่า Max Value ของ Field ที่กำหนด
+ </summary>
+	<param name="sField">Field Name ที่ต้องการหาค่า Max</param>
+	<param name="sWhere">เงือนไขในการหาค่า Max</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getInsStrSQL">
+	<summary>
+ Create Query for insert Data
+ </summary>
+	<returns>Query For Insert Data</returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getUpdStr(System.String,System.String)">
+	<summary>
+ Create Query for update data
+ </summary>
+	<param name="strWhere">Where Condition</param>
+	<param name="strSet">Set Value ถ้าไม่กำหนด คือ Update ทุก Columns</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getDelStr(System.String)">
+	<summary>
+ Create Query for Delete Data
+ </summary>
+	<param name="strWhere">Where Condition</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.getSelStr(System.String,System.String,System.String)">
+	<summary>
+ Create Query for Select Data
+ </summary>
+	<param name="strWhere">Where Condition</param>
+	<param name="strCollumn">กำหนด Column ที่จะค้นหา ถ้าไม่กำหนด คือเอาหมด</param>
+	<param name="strOrder">Sort Data</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.makeWhere_SQL">
+	<summary>
+ สร้างเงือนไขการค้นหาตาม Primary Key
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.DAO.daoBase.makeWhere_SQL(System.String@,System.Collections.Hashtable@)">
+	<summary>
+ สร้างเงือนไขการค้นหาตาม Primary Key
+ </summary>
+	<param name="sWhere">เงือนไขที่ได้สำหรับการ Where</param>
+	<param name="pParam">Parameter ที่จำเป็นในการ Where</param>
+	<returns>True : OK , False : Create Where Error</returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:OPE_Controls.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:OPE_Controls.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:OPE_Controls.clsChartData.ColumnFrom">
+	<summary>
+ ข้อมูลใน Chart เริ่มที่ Column ไหน เช่น A1
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsChartData.ColumnTo">
+	<summary>
+ ข้อมูลใน Chart สิ้นสุดที่ Column ไหน เช่น J5
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsChartData.SheetData">
+	<summary>
+ Sheet สำหรับนำข้อมูลมาแสดงใน กราฟ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsChartData.SheetChart">
+	<summary>
+ Sheet สำหรับแสดงกราฟ
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsSeriesCollection.Color">
+	<summary>
+ กำหนดสี่ให้ Line ให้ใช้ Function RGB(255, 127, 0)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsSeriesCollection.ShowValue">
+	<summary>
+ ข้อมุลที่จะเอามาแสดงในการลากเส้น เช่น A1:A5
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsSeriesCollection.XValue">
+	<summary>
+ ข้อมุลที่จะเอามาแสดงใน แกน X เช่น A1:A5
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:OPE_Controls.clsSeriesCollection.Caption">
+	<summary>
+ Line Caption
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.opeDataGrid.ColumnAdd_ComboData(System.String,System.String,System.Data.DataTable,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Add Combo Cell to Grid
+ </summary>
+	<param name="ColumnName">Columns Name</param>
+	<param name="HeaderText">Header Text</param>
+	<param name="mDt">Data Source For Combo Data</param>
+	<param name="Display">Display Name</param>
+	<param name="ValueName">Display Value</param>
+	<param name="DataMappingName">Mapping Name</param>
+	<param name="ColumnSize">Column Width</param>
+	<param name="Forzen">Forzen</param>
+	<param name="Visible">Visible</param>
+	<param name="Edit">Can Edit</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.opeDataGrid.ColumnAdd_DateTime(System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.String)">
+	<summary>
+ Add Date Time Cell TO Grid
+ </summary>
+	<param name="ColumnName">Column Name</param>
+	<param name="HeaderText">Header Text</param>
+	<param name="DataMappingName">Mapping Name</param>
+	<param name="ColumnSize">Column Width</param>
+	<param name="Forzen">Forzen</param>
+	<param name="Visible">Visible</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.opeDataGrid.ColumnAdd_TextBox(System.String,System.String,System.String,System.Int32,System.Boolean,System.Windows.Forms.DataGridViewContentAlignment,System.String,System.Boolean,System.Boolean,System.Int32)">
+	<summary>
+ Create Columns in grid in format Text Box
+ </summary>
+	<param name="ColumnName">ชื่อ Columns</param>
+	<param name="HeaderText">ข้อมูลที่แสดงที่หัวของ Columns</param>
+	<param name="DataMappingName">Mapping Data กับ Data Table</param>
+	<param name="ColumnSize">ความกว้าง</param>
+	<param name="Forzen">Forzen Columns</param>
+	<param name="Alignment">จัดตำแหน่ง</param>
+	<param name="Format">จัดรูปแบบ ของ Data ใน Columns</param>
+	<param name="Visible">แสดง หรือไม่แสดง Columns</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.opeDataGrid.ColumnAdd_Button(System.String,System.String,System.String,System.Int32,System.Boolean,System.String,System.Windows.Forms.DataGridViewContentAlignment,System.Boolean,System.Boolean)">
+	<summary>
+ Add Button Cell To Grid
+ </summary>
+	<param name="ColumnName">Column Name</param>
+	<param name="HeaderText">Header Text</param>
+	<param name="DataMappingName">Mapping Name</param>
+	<param name="ColumnSize">Column Width</param>
+	<param name="Forzen">Forzen</param>
+	<param name="Text">Text in Button</param>
+	<param name="Alignment">Text Alignment in Button</param>
+	<param name="Visible">Visible</param>
+	<param name="Edit">Can Edit</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.opeDataGrid.ColumnAdd_Picture(System.String,System.String,System.Drawing.Image,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.String)">
+	<summary>
+ Add Picture Box Column to Grid
+ </summary>
+	<param name="ColumnName">Column Name</param>
+	<param name="HeaderText">Header Text</param>
+	<param name="image">image</param>
+	<param name="ColumnSize">Column Width</param>
+	<param name="Forzen">Forzen</param>
+	<param name="Visible">Visible</param>
+	<param name="Edit">Edit</param>
+	<param name="DataMappingName">Mapping Name</param>
+	<remarks></remarks>
+</member><member name="M:OPE_Controls.Util.DBUtil.isOpen(System.Boolean)">
+	<summary> Check Open Database Status </summary>
+</member><member name="M:OPE_Controls.Util.DBUtil.DBOwner">
+	<summary> SqlServer = 'dbo.', My SQL = Blank </summary>
+</member><member name="M:OPE_Controls.Util.DBUtil.CreatePrimaryKey(System.Data.DataTable@,System.Data.DataColumn[],System.String@)">
+	<summary>
+ ใช้สำหรับ สร้าง Primary Key ให้กับ Data Table เพื่อเพิ่มความเร็วในการ Search
+ </summary>
+	<param name="dt">Data Table ที่ต้องการสร้าง Primary Key</param>
+	<param name="Columns">Columns ที่จะสร้างเป็น Primary Key</param>
+	<param name="pErr">Error Meesage</param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

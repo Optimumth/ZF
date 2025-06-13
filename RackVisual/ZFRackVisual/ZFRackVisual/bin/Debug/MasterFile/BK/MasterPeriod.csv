@@ -1,0 +1,6 @@
+Type,Period,Start,Stop
+Production,1,08.00,12.00
+Production,2,13.00,17.30
+ZFDelivery,1,08.59,11.59
+ZFDelivery,2,13.00,17.30
+CusReturn,1,11.00,17.30
