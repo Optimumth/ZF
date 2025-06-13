@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZFPKVisual", "ZFPKVisual\ZFPKVisual.vbproj", "{D6AC0F0B-4100-469E-9E65-BFFAB3A1CFDB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PKVisual", "PKVisual\PKVisual.vdproj", "{5231F6B6-E258-434B-89E8-D33E3EAED06F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6AC0F0B-4100-469E-9E65-BFFAB3A1CFDB}.Debug|x86.ActiveCfg = Debug|x86
+		{D6AC0F0B-4100-469E-9E65-BFFAB3A1CFDB}.Debug|x86.Build.0 = Debug|x86
+		{D6AC0F0B-4100-469E-9E65-BFFAB3A1CFDB}.Release|x86.ActiveCfg = Release|x86
+		{D6AC0F0B-4100-469E-9E65-BFFAB3A1CFDB}.Release|x86.Build.0 = Release|x86
+		{5231F6B6-E258-434B-89E8-D33E3EAED06F}.Debug|x86.ActiveCfg = Debug
+		{5231F6B6-E258-434B-89E8-D33E3EAED06F}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

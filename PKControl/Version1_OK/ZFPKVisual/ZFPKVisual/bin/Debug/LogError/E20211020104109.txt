@@ -1,0 +1,7 @@
+DB Scallar
+     Index :0     ERROR ID : 208
+    Message: Invalid object name 'PrgLogging'.
+    LineNumber: 1
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+
