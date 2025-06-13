@@ -1,0 +1,1 @@
+1|1|MTBF0003||K8X|CMM|F003|2025-03-04 10:40:41|BMW|ZF|550|ZF12026|null|null|null|null|null|null
