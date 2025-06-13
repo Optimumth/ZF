@@ -1,0 +1,27 @@
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\bin\Debug\ZFRackVisual.exe
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\bin\Debug\ZFRackVisual.pdb
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\bin\Debug\ZFRackVisual.xml
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\obj\x86\Debug\ZFRackVisual.Resources.resources
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\obj\x86\Debug\ZFRackVisual.vbproj.GenerateResource.Cache
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\obj\x86\Debug\ZFRackVisual.exe
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\obj\x86\Debug\ZFRackVisual.xml
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\obj\x86\Debug\ZFRackVisual.pdb
+C:\Users\OPE-TAN\AppData\Local\Temporary Projects\ZFRackVisual\obj\x86\Debug\ZFRackVisual.Form1.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.exe
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.xml
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.pdb
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\ZFRackVisual.exe
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\ZFRackVisual.pdb
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\ZFRackVisual.xml
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\office.dll
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\bin\Debug\office.xml
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.Resources.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.vbproj.GenerateResource.Cache
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.clsRackVisual.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.clsVWorkPeriod.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.clsVMain.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.clsVSchedule.resources
+D:\Source\ZF\RackVisual\ZFRackVisual\ZFRackVisual\obj\x86\Debug\ZFRackVisual.vbprojResolveAssemblyReference.cache
