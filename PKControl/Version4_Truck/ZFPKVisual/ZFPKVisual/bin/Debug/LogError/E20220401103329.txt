@@ -1,0 +1,17 @@
+Open DB
+     Index :0     ERROR ID : 40613
+    Message: Database 'ZFPKCtrl' on server 'cksrv.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{16D4A9A9-E294-4269-8E89-E7C43A5B7D56}'.
+    LineNumber: 0
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :0     ERROR ID : 40613
+    Message: Database 'ZFPKCtrl' on server 'cksrv.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{D4B14A0A-8E68-4A0A-A1B1-DCAB501FBC5B}'.
+    LineNumber: 0
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :0     ERROR ID : 40615
+    Message: Cannot open server 'cksrv' requested by the login. Client with IP address '49.49.218.238' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+

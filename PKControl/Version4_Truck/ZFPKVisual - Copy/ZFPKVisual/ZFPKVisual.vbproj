@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6AC0F0B-4100-469E-9E65-BFFAB3A1CFDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ZFPKVisual.My.MyApplication</StartupObject>
+    <RootNamespace>ZFPKVisual</RootNamespace>
+    <AssemblyName>ZFPKVisual</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ZFPKVisual.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ZFPKVisual.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\appicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MouseKeyboardLibrary">
+      <HintPath>bin\Debug\MouseKeyboardLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="OBSWMC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\OBSWMC.dll</HintPath>
+    </Reference>
+    <Reference Include="OPE-Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Protect, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Protect.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContainersHandling\clsVContainerHandling.Designer.vb">
+      <DependentUpon>clsVContainerHandling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContainersHandling\clsVContainerHandling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogData\clsCLogData.vb" />
+    <Compile Include="LogData\clsVLogData.Designer.vb">
+      <DependentUpon>clsVLogData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogData\clsVLogData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Login\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Login\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Staff\clsCStaff.vb" />
+    <Compile Include="Master\Staff\clsVStaff.Designer.vb">
+      <DependentUpon>clsVStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Staff\clsVStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\SystemConfig\clsCSystemConfig.vb" />
+    <Compile Include="Master\SystemConfig\clsVSystemConfig.Designer.vb">
+      <DependentUpon>clsVSystemConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\SystemConfig\clsVSystemConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RackReview\clsCRackReview.vb" />
+    <Compile Include="RackReview\clsVRackReview.Designer.vb">
+      <DependentUpon>clsVRackReview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RackReview\clsVRackReview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RackStatus\clsCChangeStatus.vb" />
+    <Compile Include="RackStatus\clsCPrint.vb" />
+    <Compile Include="RackStatus\clsCRackStatus.vb" />
+    <Compile Include="RackStatus\clsVChangeStatus.Designer.vb">
+      <DependentUpon>clsVChangeStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RackStatus\clsVChangeStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RackStatus\clsVRackStatus.Designer.vb">
+      <DependentUpon>clsVRackStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RackStatus\clsVRackStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Menu\MainFormMDI.designer.vb">
+      <DependentUpon>MainFormMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Menu\MainFormMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Splash\clsVSplash.Designer.vb">
+      <DependentUpon>clsVSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Splash\clsVSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MasterModel\clsCMstModel.vb" />
+    <Compile Include="Master\MasterModel\clsVMstModel.Designer.vb">
+      <DependentUpon>clsVMstModel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterModel\clsVMstModel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MasterRackDT\clsCMstRackDT.vb" />
+    <Compile Include="Master\MasterRackDT\clsVMstRackDT.Designer.vb">
+      <DependentUpon>clsVMstRackDT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterRackDT\clsVMstRackDT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\NewRack\clsVNewRack.Designer.vb">
+      <DependentUpon>clsVNewRack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\NewRack\clsVNewRack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\MasterRack\clsCMstRack.vb" />
+    <Compile Include="Master\MasterRack\clsVMstRack.Designer.vb">
+      <DependentUpon>clsVMstRack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterRack\clsVMstRack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RackStatus\clsVSyncronize.Designer.vb">
+      <DependentUpon>clsVSyncronize.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RackStatus\clsVSyncronize.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemClass\CustomizeSetting.vb" />
+    <Compile Include="SystemClass\EnumData.vb" />
+    <Compile Include="SystemClass\EventArgs.vb" />
+    <Compile Include="TruckDT\clsCTruckDT.vb" />
+    <Compile Include="TruckDT\clsVTruckDT_NewTrans.Designer.vb">
+      <DependentUpon>clsVTruckDT_NewTrans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TruckDT\clsVTruckDT_NewTrans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Truck\clsCTruck.vb" />
+    <Compile Include="Truck\clsPTruck.vb" />
+    <Compile Include="Truck\clsVTruck.Designer.vb">
+      <DependentUpon>clsVTruck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Truck\clsVTruck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TruckDT\clsVTruckDT.Designer.vb">
+      <DependentUpon>clsVTruckDT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TruckDT\clsVTruckDT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContainersHandling\clsVContainerHandling.resx">
+      <DependentUpon>clsVContainerHandling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogData\clsVLogData.resx">
+      <DependentUpon>clsVLogData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Login\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Staff\clsVStaff.resx">
+      <DependentUpon>clsVStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\SystemConfig\clsVSystemConfig.resx">
+      <DependentUpon>clsVSystemConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RackReview\clsVRackReview.resx">
+      <DependentUpon>clsVRackReview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RackStatus\clsVChangeStatus.resx">
+      <DependentUpon>clsVChangeStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RackStatus\clsVRackStatus.resx">
+      <DependentUpon>clsVRackStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Menu\MainFormMDI.resx">
+      <DependentUpon>MainFormMDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Splash\clsVSplash.resx">
+      <DependentUpon>clsVSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MasterModel\clsVMstModel.resx">
+      <DependentUpon>clsVMstModel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MasterRackDT\clsVMstRackDT.resx">
+      <DependentUpon>clsVMstRackDT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\NewRack\clsVNewRack.resx">
+      <DependentUpon>clsVNewRack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\MasterRack\clsVMstRack.resx">
+      <DependentUpon>clsVMstRack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RackStatus\clsVSyncronize.resx">
+      <DependentUpon>clsVSyncronize.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruckDT\clsVTruckDT_NewTrans.resx">
+      <DependentUpon>clsVTruckDT_NewTrans.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Truck\clsVTruck.resx">
+      <DependentUpon>clsVTruck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TruckDT\clsVTruckDT.resx">
+      <DependentUpon>clsVTruckDT.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZFSplash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StateZF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StateMB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StateOntruck.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StateSupplier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StateExtWH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Handy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnGridPrint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnGridHourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnGridHourglass2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnGridTruck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnGridHourglass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnGridPrint.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

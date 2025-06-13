@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZF-PKCtrl", "ZF-PKCtrl\ZF-PKCtrl.vbproj", "{11A016BE-D28C-47AE-9F7A-ADC982AD4526}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "PKCtrlCAB", "PKCtrlCAB\PKCtrlCAB.vddproj", "{7B41A5A0-BAB8-4A49-8663-A832BA848C2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11A016BE-D28C-47AE-9F7A-ADC982AD4526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A016BE-D28C-47AE-9F7A-ADC982AD4526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A016BE-D28C-47AE-9F7A-ADC982AD4526}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{11A016BE-D28C-47AE-9F7A-ADC982AD4526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A016BE-D28C-47AE-9F7A-ADC982AD4526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A016BE-D28C-47AE-9F7A-ADC982AD4526}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7B41A5A0-BAB8-4A49-8663-A832BA848C2D}.Debug|Any CPU.ActiveCfg = Debug
+		{7B41A5A0-BAB8-4A49-8663-A832BA848C2D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

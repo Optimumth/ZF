@@ -1,0 +1,32 @@
+Open DB
+     Index :0     ERROR ID : 4060
+    Message: Cannot open database "ZFPKCtrlOnsite" requested by the login. The login failed.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :1     ERROR ID : 18456
+    Message: Login failed for user 'sa'.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :0     ERROR ID : 4060
+    Message: Cannot open database "ZFPKCtrlOnsite" requested by the login. The login failed.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :1     ERROR ID : 18456
+    Message: Login failed for user 'sa'.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :0     ERROR ID : 4060
+    Message: Cannot open database "ZFPKCtrlOnsite" requested by the login. The login failed.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+Index :1     ERROR ID : 18456
+    Message: Login failed for user 'sa'.
+    LineNumber: 65536
+    Source: .Net SqlClient Data Provider
+    Procedure: 
+
